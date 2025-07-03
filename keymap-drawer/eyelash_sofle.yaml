@@ -63,7 +63,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - capa2
-  - {t: capa3, h: toggle}
+  - '&GLY3'
   - $$mdi:backspace-reverse-outline$$
   capa1:
   - F1
@@ -258,5 +258,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&GLY0'
   - {t: '$$mdi:transfer$$', type: trans}
