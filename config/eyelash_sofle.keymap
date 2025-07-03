@@ -64,8 +64,8 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK       &trans           &trans           &trans            &to 3              &trans
             >;
 
-            display-name = "layer1";
             sensor-bindings = <&scroll_encoder>;
+            display-name = "capa1";
             label = "capa1";
         };
 
@@ -79,6 +79,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            display-name = "capa2";
             label = "capa2";
         };
 
@@ -92,6 +93,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            display-name = "capa3";
             label = "capa3";
         };
 
@@ -106,6 +108,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            display-name = "capa4";
             label = "capa4";
         };
     };
