@@ -38,6 +38,22 @@
     behaviors {
     };
 
+    macros {
+        GLY3: GLY3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 3 &bt BT_SEL 2>;
+            label = "GLY3";
+        };
+
+        GLY0: GL0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 3 &bt BT_SEL 1>;
+            label = "GL0";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -47,7 +63,7 @@
 &kp TAB      &kp Q          &kp W         &kp E   &kp R             &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O    &kp P       &kp BSLH
 &kp CAPS     &kp A          &kp S         &kp D   &kp F             &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L    &kp SEMI    &kp APOS
 &kp LSHFT    &kp Z          &kp X         &kp C   &kp V             &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH    &kp ENTER
-&kp C_PAUSE  &kp RIGHT_ALT  &kp LEFT_GUI  &mo 1   &kp LEFT_CONTROL  &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo 2      &tog 3   &kp DELETE
+&kp C_PAUSE  &kp RIGHT_ALT  &kp LEFT_GUI  &mo 1   &kp LEFT_CONTROL  &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo 2      &GLY3    &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -89,7 +105,7 @@
 &trans  &trans  &trans             &trans  &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans             &trans  &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans             &trans  &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp RIGHT_CONTROL  &trans  &kp LEFT_GUI  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp RIGHT_CONTROL  &trans  &kp LEFT_GUI  &trans    &trans  &trans  &trans  &trans  &GLY0   &trans
             >;
 
             label = "capa3";
